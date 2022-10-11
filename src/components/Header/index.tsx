@@ -26,6 +26,7 @@ function Header({ text, updateText, addToList }: HeaderProps) {
           value={text}
           onChange={updateText}
           onKeyPress={onInputKeyPress}
+          placeholder="Fresh idea..."
         />
         <button name="add" onClick={addToList} disabled={text.length === 0}>
           Add

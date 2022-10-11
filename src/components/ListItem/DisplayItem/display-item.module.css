@@ -30,6 +30,7 @@ button.saveButton {
   overflow: hidden;
   text-overflow: ellipsis;
   margin: auto;
+  font-weight: 500;
 }
 
 .text {
