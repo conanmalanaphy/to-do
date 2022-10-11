@@ -1,0 +1,37 @@
+.button {
+  height: 1rem;
+  cursor: pointer;
+  margin: auto;
+}
+
+button.saveButton {
+  background-color: rgba(6, 97, 6, 0.719);
+}
+
+.chevron {
+  height: 1rem;
+  cursor: pointer;
+  margin: auto;
+  color: grey;
+}
+
+.chevron.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.striked {
+  text-decoration: line-through;
+}
+
+.name {
+  flex-grow: 2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: auto;
+}
+
+.text {
+  margin: auto;
+}

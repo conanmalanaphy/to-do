@@ -1,0 +1,22 @@
+.text {
+  margin: auto;
+}
+
+.input {
+  color: #111111;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 2px solid #d1d3d4;
+  flex-grow: 2;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #0d75ec;
+}
+
+.button {
+  height: 1rem;
+  cursor: pointer;
+  margin: auto;
+}

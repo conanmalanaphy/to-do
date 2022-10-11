@@ -1,0 +1,36 @@
+.list {
+  padding: 2rem;
+  min-width: 400px;
+  overflow: auto;
+  height: 100vh;
+  background-color: skyblue;
+  box-sizing: border-box;
+}
+
+.items {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 2rem;
+}
+
+.animated:last-child {
+  padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .items {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.empty {
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 2.5rem 1rem 2.5rem 1rem;
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+}
