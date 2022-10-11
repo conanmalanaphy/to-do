@@ -100,7 +100,7 @@ function List() {
             }
           )
         ) : (
-          <div className={styles.empty}>Please Enter some items</div>
+          <div className={styles.empty}>To start your list add some items...</div>
         )}
       </div>
     </div>
