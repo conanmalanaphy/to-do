@@ -7,7 +7,6 @@ interface HeaderProps {
 }
 
 function Header({ text, updateText, addToList }: HeaderProps) {
-
   // We also want to handle users pressing enter to add
   const onInputKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {

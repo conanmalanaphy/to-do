@@ -19,7 +19,7 @@ describe("DisplayItem", () => {
 
     expect(screen.getByText("Test")).toBeInTheDocument();
   });
-  
+
   it("should see the postion of element", () => {
     render(
       <DisplayItem

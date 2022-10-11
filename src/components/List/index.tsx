@@ -18,12 +18,11 @@ function List() {
   const transitions = useTransition(
     toDos.map((data, i) => ({ ...data, y: i * height })),
     {
-      from: { opacity: 0 , y: 0 },
-      leave: ({ y }) => ({ y, opacity: 0, height: 0}),
+      from: { opacity: 0, y: 0 },
+      leave: ({ y }) => ({ y, opacity: 0, height: 0 }),
       enter: ({ y }) => ({ y, opacity: 1 }),
       update: ({ y }) => ({ y }),
       key: (item: Item) => item.id,
-     
     }
   );
 
@@ -100,7 +99,9 @@ function List() {
             }
           )
         ) : (
-          <div className={styles.empty}>To start your list add some items...</div>
+          <div className={styles.empty}>
+            To start your list add some items...
+          </div>
         )}
       </div>
     </div>
