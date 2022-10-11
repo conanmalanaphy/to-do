@@ -4,9 +4,17 @@ interface HeaderProps {
   text: string;
   updateText: (e: React.FormEvent<HTMLInputElement>) => void;
   addToList: () => void;
+  hasNoItems: boolean;
+  clearList: () => void;
 }
 
-function Header({ text, updateText, addToList }: HeaderProps) {
+function Header({
+  text,
+  updateText,
+  addToList,
+  hasNoItems,
+  clearList,
+}: HeaderProps) {
   // We also want to handle users pressing enter to add
   const onInputKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
@@ -29,6 +37,14 @@ function Header({ text, updateText, addToList }: HeaderProps) {
         />
         <button name="add" onClick={addToList} disabled={text.length === 0}>
           Add
+        </button>
+        <button
+          name="clear"
+          className={styles.clearButton}
+          onClick={clearList}
+          disabled={hasNoItems}
+        >
+          Clear
         </button>
       </div>
     </div>

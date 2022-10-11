@@ -40,6 +40,10 @@ function List() {
           }
         }}
         updateText={updateText}
+        hasNoItems={toDos.length === 0}
+        clearList={() => {
+          dispatch({ type: "CLEAR_ALL" });
+        }}
       />
       <div className={styles.items}>
         {toDos.length > 0 ? (

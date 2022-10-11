@@ -54,3 +54,7 @@
   cursor: default;
   opacity: 0.5;
 }
+
+.inputContainer button.clearButton {
+  background-color: rgba(173, 8, 8, 0.712);
+}

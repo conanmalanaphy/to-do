@@ -26,13 +26,23 @@ function DisplayItem({
 }: DisplayItemProps) {
   return (
     <>
+      {isChecked ? (
+        <img
+          src="/images/arrow-rotate-left-solid.svg"
+          alt="undo"
+          className={styles.button}
+          onClick={onCheck}
+        />
+      ) : (
+        <img
+          src="/images/check-solid.svg"
+          alt="check"
+          className={styles.button}
+          onClick={onCheck}
+        />
+      )}
+
       <div className={styles.text}>{position})</div>
-      <input
-        type="checkbox"
-        checked={isChecked}
-        name="isChecked"
-        onChange={onCheck}
-      />
       <div
         className={classNames(styles.name, {
           [styles.striked]: isChecked,

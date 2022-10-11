@@ -13,6 +13,7 @@ interface State {
 
 type Action =
   | { type: "ADD_TODO" }
+  | { type: "CLEAR_ALL" }
   | { type: "SET_TEXT"; payload: string }
   | { type: "DELETE_ITEM"; payload: number }
   | { type: "MOVE_DOWN"; payload: number }
@@ -90,7 +91,9 @@ const reducer = (state: State, action: Action) => {
 
       return { ...state, toDos: items, text: "" };
     }
-
+    case "CLEAR_ALL": {
+      return { ...state, toDos: [] };
+    }
     default:
       return state;
   }
